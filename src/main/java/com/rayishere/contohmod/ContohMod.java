@@ -1,5 +1,6 @@
 package com.rayishere.contohmod;
 
+import com.rayishere.contohmod.block.ModBlocks;
 import com.rayishere.contohmod.item.itemsOP;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -41,6 +42,7 @@ public class ContohMod {
         NeoForge.EVENT_BUS.register(this);
 
         itemsOP.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -58,6 +60,11 @@ public class ContohMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(itemsOP.OPENDER);
             event.accept(itemsOP.PUNIV);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.PUNIV_BLOCK);
+            event.accept(ModBlocks.PUNIV_ORE);
         }
     }
 
