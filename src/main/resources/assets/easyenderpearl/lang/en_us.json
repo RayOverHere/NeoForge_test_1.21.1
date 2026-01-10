@@ -5,6 +5,9 @@
   "item.easyenderpearl.opender": "OP Ender Eyes",
   "item.easyenderpearl.puniv": "President University",
 
+  "creativetab.easyenderpearl.puniv_items" : "President University Items",
+  "creativetab.easyenderpearl.puniv_blocks" : "President University Blocks",
+
   "examplemod.configuration.title": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml.title": "Example Mod Configs",

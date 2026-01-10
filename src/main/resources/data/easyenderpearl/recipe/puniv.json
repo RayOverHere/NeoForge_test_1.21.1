@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "items": "easyenderpearl:puniv_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "easyenderpearl:puniv"
+  }
+}
